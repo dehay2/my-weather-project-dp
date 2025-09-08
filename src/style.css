@@ -48,6 +48,7 @@ img {
 .emoji {
   font-size: 20px;
   word-spacing: 120px;
+  line-height: 30px;
 }
 
 .info {
