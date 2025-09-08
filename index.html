@@ -3,20 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
     <title>My Weather Project</title>
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <header>
-      <form>
-        <input type="text" placeholder="Search for a city" />
-        <input type="submit" value="Search" />
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/173/396/original/sunpeekcloud.jpg?1757289064" width="100%"/>
+   <div class="current-weather">
+      <form id="search-form">
+        <input
+          type="text"
+          placeholder="Enter a city"
+          required
+          class="search-form-input"
+        />
+        <input type="submit" value="Search" class="search-form-button" />
       </form>
     </header>
     <main>
-      <h1>74°</h1>
-      <h2>Atlanta</h2>
-      <p>Tuesday 21:03 Humidity: 87% Partly Clodudy Wind: 7.2km/h Rain: 2%</p>
+        <span class="current-temperature"><h1>74°</h1></span>
+        <span class="current-city"><h2>Atlanta</h2></span>
+        <span class="current-date"><h3>Tuesday 21:03</h3></span>
+        <span class="current-info">
+          <p><span class="emoji"><br>🌡️ ☔ 🍃 <br/> </span>
+             <span class="info"><br>87%  2% 7.2km/h<br/> </span>
+          <span class="description"><br>Humidity Rain Wind<br/>
+            </span><span class="current-description"><br>⛅ Partly Cloudy<br/></span></p>
+        </span>       
     </main>
     <footer>
       This project was coded by
@@ -29,6 +47,7 @@
       <a href="https://my-weather-project-dp.netlify.app/" target="_blank"
         >hosted on Netlify</a
       >
-    </footer>
+    </footer> 
+  </div>
   </body>
 </html>
