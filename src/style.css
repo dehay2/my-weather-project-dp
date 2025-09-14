@@ -1,6 +1,8 @@
-img {
-  position: block;
-  margin: 0 auto;
+body {
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/173/396/original/sunpeekcloud.jpg?1757289064");
+  background-repeat: no-repeat;
+  background-size: 5080px;
+  background-position: center;
 }
 
 .search-form-input {
@@ -16,14 +18,15 @@ img {
   border: 1px solid;
 }
 .current-weather {
-  text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
   margin: 45px auto;
   padding: 30px;
   max-width: 600px;
+  width: 100%;
   border-radius: 10px;
   background-color: #daeff2;
-  position: absolute;
+  position: fixed;
+  text-align: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -33,6 +36,7 @@ img {
 .current-temperature {
   font-size: 30px;
   text-align: center;
+  text-shadow: 2px 2px 4px #ffffff;
 }
 
 .current-city {
