@@ -14,26 +14,27 @@
   </head>
   <body>
    <div class="current-weather">
-      <form id="search-form">
+      <form class="search-form" id="search-form">
         <input
-          type="text"
+          type="search"
           placeholder="Search a city"
           required
+          id="search-form-input"
           class="search-form-input"
         />
         <input type="submit" value="Search" class="search-form-button" />
       </form>
     </header>
     <main>
-        <span class="current-temperature"><h1>74°</h1></span>
-        <span class="current-city"><h2>Atlanta</h2></span>
-        <span class="current-date"><h3>Tuesday 21:03</h3></span>
-        <span class="current-info">
-          <p><span class="emoji"><br>🌡️ ☔ 🍃 <br/> </span>
-             <span class="info"><br>87%  2% 7.2km/h<br/> </span>
-          <span class="description"><br>Humidity Rain Wind<br/>
-            </span><span class="current-description"><br>⛅ Partly Cloudy<br/></span></p>
-        </span>       
+        <h1 class="current-temperature">74°</h1>
+        <h2 class="current-city" id="city">Atlanta</h2>
+        <h3 class="current-date">Tuesday 21:03</h3>
+        <div class="current-info">
+          <p class="emoji"><br>🌡️ ☔ 🍃 <br/> </p>
+             <p class="info"><br>87%  2% 7.2km/h<br/> </p>
+          <p class="description"><br>Humidity Rain Wind<br/>
+          </p><p class="current-description"><br>⛅ Partly Cloudy<br/></p>
+        </div>       
     </main>
     <footer>
       This project was coded by
@@ -48,5 +49,6 @@
       >
     </footer> 
   </div>
-  </body>
+  <script src="src/index.js"></script>
+</body>
 </html>
