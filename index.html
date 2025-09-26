@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
     <title>My Weather Project</title>
     <link rel="stylesheet" href="src/style.css" />
   </head>
@@ -26,9 +27,10 @@
       </form>
     </header>
     <main>
-        <h1 class="current-temperature">74°</h1>
-        <h2 class="current-city" id="city">Atlanta</h2>
-        <h3 class="current-date">Tuesday 21:03</h3>
+        <h1 class="current-temperature" id="temperature"></h1>
+        <h2 class="unit">°C</h2>
+        <h3 class="current-city" id="city">Atlanta</h3>
+        <h4 class="current-date">Tuesday 21:03</h4>
         <div class="current-info">
           <p class="emoji"><br>🌡️ ☔ 🍃 <br/> </p>
              <p class="info"><br>87%  2% 7.2km/h<br/> </p>

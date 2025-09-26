@@ -3,7 +3,7 @@ body {
   background-repeat: no-repeat;
   background-size: 5080px;
   background-position: center;
-  display: block;
+  position: fixed;
 }
 
 .search-form-input {
@@ -36,8 +36,14 @@ body {
 
 .current-temperature {
   font-size: 60px;
-  text-align: center;
   text-shadow: 2px 2px 5px #ffffff;
+}
+
+.unit {
+  position: absolute;
+  right: 275px;
+  top: 90px;
+  font-size: 20px;
 }
 
 .current-city {
