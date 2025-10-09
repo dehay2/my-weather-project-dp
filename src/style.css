@@ -3,7 +3,7 @@ body {
   background-repeat: no-repeat;
   background-size: 5080px;
   background-position: center;
-  position: fixed;
+  position: static;
 }
 
 .search-form-input {
@@ -11,6 +11,7 @@ body {
   padding: 6px;
   border: none;
   border-radius: 10px;
+  margin: 20px;
 }
 
 .search-form-button {
@@ -18,74 +19,75 @@ body {
   border-radius: 10px;
   border: 1px solid;
 }
-.current-weather {
+.weather-app {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  margin: 45px auto;
-  padding: 30px;
-  max-width: 600px;
-  width: 100%;
-  border-radius: 30px;
   background-color: #daeff2;
-  position: fixed;
-  text-align: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  border-radius: 20px;
   opacity: 0.9;
+  text-align: center;
+  max-width: 550px;
+  height: 46em;
+  margin: 20px auto;
+  padding: 20px;
 }
 
 .current-temperature {
-  font-size: 60px;
+  font-size: 90px;
   text-shadow: 2px 2px 5px #ffffff;
+  margin: 20px auto;
 }
 
 .unit {
-  position: absolute;
-  right: 275px;
-  top: 90px;
   font-size: 20px;
+  position: relative;
+  bottom: 102px;
+  left: 55px;
 }
 
 .current-city {
-  font-size: 28px;
-  line-height: 20px;
-  text-align: center;
+  font-size: 35px;
+  font-weight: 550;
   text-shadow: 2px 2px 4px #ffffff;
-}
-
-.current-date {
-  text-align: center;
-  line-height: 35px;
+  position: relative;
+  bottom: 40px;
 }
 
 .emoji {
   font-size: 20px;
-  word-spacing: 120px;
-  line-height: 30px;
+  word-spacing: 110px;
+  line-height: 80px;
+  position: relative;
+  right: 5px;
+}
+
+.current-info {
+  word-spacing: 90px;
+  line-height: 40px;
+  font-weight: 550;
+  color: #020972;
 }
 
 .info {
-  word-spacing: 108px;
+  word-spacing: 90px;
   position: relative;
-  left: 20px;
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 10px;
-}
-
-.description {
-  word-spacing: 112px;
-  position: relative;
-  right: 7px;
-  line-height: 12px;
+  right: 10px;
+  font-weight: 550;
+  line-height: 60px;
 }
 
 .current-description {
-  line-height: 50px;
   font-weight: bold;
   font-size: 20px;
+  position: relative;
+  right: 40px;
+  bottom: 25px;
+}
+
+.weather-app-icon {
+  position: relative;
+  top: 20px;
 }
 
 footer {
-  line-height: 90px;
+  margin: 60px auto;
 }
